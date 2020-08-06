@@ -1,0 +1,144 @@
+<head>
+<link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="css/test.css" />
+</head>
+<body>
+<script src="js/timetable.js"></script>
+
+<center>
+<div class="heading" style="font-family: 'Bungee Shade';font-size: 22px;background-color: #ffbb99;height: 70px;padding: 5px 0 5px 0;text-align: center;">
+	<h2>Online Class Schedule</h2>
+</div>
+
+<div class="howtouse" style="background-color: #9999ff;">
+	HOW TO USE:<p>
+	1) Enter Course number and link to online lecture<br>
+	2) Alter individual entries if required (example: class cancelled)<br>
+	3) Select 'Convert to Timetable'<br>
+	4) Enable Background Graphics on print page<br><img style="width: 50%" src="img/howtouse.png"><br>
+	5) Save as pdf
+</div>
+
+<div class="slotter" id="slotter" style="">
+<h4>Enter Course Number and Link</h4>
+<div><input id="namea" placeholder="Name A Slot"><input id="a" placeholder="Class Link"><button onClick="changer(a)">Insert</button></div>
+<div><input id="nameb" placeholder="Name B Slot"><input id="b" placeholder="Class Link"><button onClick="changer(b)">Insert</button></div>
+<div><input id="namec" placeholder="Name C Slot"><input id="c" placeholder="Class Link"><button onClick="changer(c)">Insert</button></div>
+<div><input id="named" placeholder="Name D Slot"><input id="d" placeholder="Class Link"><button onClick="changer(d)">Insert</button></div>
+<div><input id="namee" placeholder="Name E Slot"><input id="e" placeholder="Class Link"><button onClick="changer(e)">Insert</button></div>
+<div><input id="namef" placeholder="Name F Slot"><input id="f" placeholder="Class Link"><button onClick="changer(f)">Insert</button></div>
+<div><input id="nameg" placeholder="Name G Slot"><input id="g" placeholder="Class Link"><button onClick="changer(g)">Insert</button></div>
+<div><input id="nameh" placeholder="Name H Slot"><input id="h" placeholder="Class Link"><button onClick="changer(h)">Insert</button></div>
+<div><input id="namej" placeholder="Name J Slot"><input id="j" placeholder="Class Link"><button onClick="changer(j)">Insert</button></div>
+<!-- <div><input id="namek" placeholder="Name K Slot"><input id="k" placeholder="Class Link"><button onClick="changer(k)">Insert</button></div> -->
+<!-- <div><input id="namel" placeholder="Name L Slot"><input id="l" placeholder="Class Link"><button onClick="changer(l)">Insert</button></div> -->
+<!-- <div><input id="namem" placeholder="Name M Slot"><input id="m" placeholder="Class Link"><button onClick="changer(m)">Insert</button></div> -->
+<!-- <div><input id="namep" placeholder="Name P Slot"><input id="p" placeholder="Class Link"><button onClick="changer(p)">Insert</button></div> -->
+<!-- <div><input id="nameq" placeholder="Name Q Slot"><input id="q" placeholder="Class Link"><button onClick="changer(q)">Insert</button></div> -->
+<!-- <div><input id="namer" placeholder="Name R Slot"><input id="r" placeholder="Class Link"><button onClick="changer(r)">Insert</button></div> -->
+<!-- <div><input id="names" placeholder="Name S Slot"><input id="s" placeholder="Class Link"><button onClick="changer(s)">Insert</button></div> -->
+<!-- <div><input id="namet" placeholder="Name T Slot"><input id="t" placeholder="Class Link"><button onClick="changer(t)">Insert</button></div> -->
+</div>
+</center>
+
+
+
+	<!-- TABLE -->
+	<div class="tablee" style="overflow-x:auto;">
+		<table>
+			<tr>
+				<th id="MON">Day|Slot</th>
+				<th id="">8:00 - 8:50</th>
+				<th id="">9:00 - 9:50</th>
+				<th id="">10:00 - 10:50</th>
+				<th id="">11:00 - 11:50</th>
+				<th>break</th>
+				<th id="">13:00 - 13:50</th>
+				<th id="">14:00 - 15:15</th>
+				<th id="">15:00 - 16:45</th>
+				<th id="">17:00 - 17:50</th>
+			</tr>
+			<!-- MON -->
+			<tr>
+				<th>Mon</th>
+				<th class="subj" style="background-color: #ff8080;"><input id="A" value="A"><br><input id="Aname"></th>
+				<th class="subj" style="background-color: #66ffcc"><input id="B" value="B"><br><input id="Bname"></th>
+				<th class="subj" style="background-color: #b3d9ff"><input id="C" value="C"><br><input id="Cname"></th>
+				<th class="subj" style="background-color: #80ff80"><input id="D" value="D"><br><input id="Dname"></th>
+				<th style="background-color: #d9d9d9">BREAK</th>
+				<th class="subj" style="background-color: #ffffb3"><input id="G" value="G"><br><input id="Gname"></th>
+				<th class="subj"><input id="H/P" value="H/P"><br><input id="H/Pname"></th>
+				<th class="subj"><input id="M/P" value="M/P"><br><input id="M/Pname"></th>
+				<th class="subj"><input id="J" value="J"><br><input id="Jname"></th>
+			</tr>
+			<!-- TUE -->
+			<tr>
+				<th>Tue</th>
+				<th class="subj" style="background-color: #66ffcc"><input id="B" value="B"><br><input id="Bname"></th>
+				<th class="subj" style="background-color: #b3d9ff"><input id="C" value="C"><br><input id="Cname"></th>
+				<th class="subj" style="background-color: #80ff80"><input id="D" value="D"><br><input id="Dname"></th>
+				<th class="subj" style="background-color: #ff99bb"><input id="E" value="E"><br><input id="Ename"></th>
+				<th style="background-color: #d9d9d9">BREAK</th>
+				<th class="subj" style="background-color: #ff8080;"><input id="A" value="A"><br><input id="Aname"></th>
+				<th class="subj"><input id="M/Q" value="M/Q"><br><input id="M/Qname"></th>
+				<th class="subj"><input id="H/Q" value="H/Q"><br><input id="H/Qname"></th>
+				<th class="subj" style="background-color: #dd99ff"><input id="F" value="F"><br><input id="Fname"></th>
+			</tr>
+			<!-- WED -->
+			<tr>
+				<th>Wed</th>
+				<th class="subj" style="background-color: #b3d9ff"><input id="C" value="C"><br><input id="Cname"></th>
+				<th class="subj" style="background-color: #80ff80"><input id="D" value="D"><br><input id="Dname"></th>
+				<th class="subj" style="background-color: #ff99bb" style="background-color: #ff99bb"><input id="E" value="E"><br><input id="Ename"></th>
+				<th class="subj" style="background-color: #dd99ff"><input id="F" value="F"><br><input id="Fname"></th>
+				<th style="background-color: #d9d9d9">BREAK</th>
+				<th class="subj" style="background-color: #66ffcc"><input id="B" value="B"><br><input id="Bname"></th>
+				<th class="subj"><input id="J/R" value="J/R"><br><input id="J/Rname"></th>
+				<th class="subj"><input id="K/R" value="K/R"><br><input id="K/Rname"></th>
+				<th class="subj" style="background-color: #ffffb3"><input id="G" value="G"><br><input id="Gname"></th>
+			</tr>
+			<!-- THU -->
+			<tr>
+				<th>Thu</th>
+				<th class="subj" style="background-color: #ff99bb"><input id="E" value="E"><br><input id="Ename"></th>
+				<th class="subj" style="background-color: #dd99ff"><input id="F" value="F"><br><input id="Fname"></th>
+				<th class="subj" style="background-color: #ffffb3"><input id="G" value="G"><br><input id="Gname"></th>
+				<th class="subj" style="background-color: #ff8080;"><input id="A" value="A"><br><input id="Aname"></th>
+				<th style="background-color: #d9d9d9">BREAK</th>
+				<th class="subj" style="background-color: #80ff80"><input id="D" value="D"><br><input id="Dname"></th>
+				<th class="subj"><input id="L/S" value="L/S"><br><input id="L/Sname"></th>
+				<th class="subj"><input id="J/S" value="J/S"><br><input id="J/Sname"></th>
+				<th class="subj"><input id="H" value="H"><br><input id="Hname"></th>
+			</tr>
+			<!-- FRI -->
+			<tr>
+				<th>Fri</th>
+				<th class="subj" style="background-color: #dd99ff"><input id="F" value="F"><br><input id="Fname"></th>
+				<th class="subj" style="background-color: #ffffb3"><input id="G" value="G"><br><input id="Gname"></th>
+				<th class="subj" style="background-color: #ff8080;"><input id="A" value="A"><br><input id="Aname"></th>
+				<th class="subj" style="background-color: #66ffcc"><input id="B" value="B"><br><input id="Bname"></th>
+				<th style="background-color: #d9d9d9">BREAK</th>
+				<th class="subj" style="background-color: #b3d9ff"><input id="C" value="C"><br><input id="Cname"></th>
+				<th class="subj"><input id="K/T" value="K/T"><br><input id="K/Tname"></th>
+				<th class="subj"><input id="L/T" value="L/T"><br><input id="L/Tname"></th>
+				<th class="subj" style="background-color: #ff99bb"><input id="E" value="E"><br><input id="Ename"></th>
+			</tr>
+			<!-- SAT -->
+		</table>
+		<center><button id="convert-button" style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;" onClick="convert()">
+			Convert to Timetable
+		</button></center>
+	</div>
+
+</body>
+</html>

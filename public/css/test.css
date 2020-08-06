@@ -1,0 +1,86 @@
+body{ 
+background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+font-family:courier,arial,helvetica;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+table, th, td {
+  border: 1px solid black;
+  word-wrap: break-word;
+}
+th {
+	width:100px;
+	height: 50px;
+}
+th #A{
+	background-color: #ff8080;
+}
+th #B{
+background-color: #66ffcc;	
+}
+th #C{
+	background-color: green;
+}
+th #D{
+	background-color: orange;
+}
+th #E{
+	background-color: yellow;
+}
+th #F{
+	background-color: brown;
+}
+th #G{
+	background-color: grey;
+}
+
+@media print{
+
+-webkit-print-color-adjust: exact !important;
+body{ background-color: grey !important;}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+table, th, td {
+  border: 1px solid black;
+}
+th {
+	width:100px;
+	height: 50px;
+}
+th #A{
+	background-color: #ff8080;
+}
+th #B{
+background-color: #66ffcc;	
+}
+th #C{
+	background-color: green;
+}
+th #D{
+	background-color: orange;
+}
+th #E{
+	background-color: yellow;
+}
+th #F{
+	background-color: brown;
+}
+th #G{
+	background-color: grey;
+}
+
+
+}
