@@ -42,22 +42,21 @@ th #G{
 	background-color: grey;
 }
 
-/*@media print{
+@media print{
 
 -webkit-print-color-adjust: exact !important;
 body{ background-color: grey !important;}
 
 table {
 	border-collapse: collapse;
-	width: 500px;
-	font-size: 10px;
+	width: 100%;
 }
 
 tr:nth-child(even) {background-color: #f2f2f2;}
 
 table, th, td {
   border: 1px solid black;
-  height: 100%;
+  font-size: 10px;
 }
 th {
 	width:100px;
@@ -86,4 +85,4 @@ th #G{
 }
 
 
-}*/
+}
