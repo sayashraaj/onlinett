@@ -1,10 +1,13 @@
 <head>
 <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
-<link rel="stylesheet" type="text/css" href="css/test.css" />
+<link rel="stylesheet" type="text/css" href="test.css" />
 </head>
 <body>
 <script src="js/timetable.js"></script>
 
+<script src="js/html2pdf.bundle.min.js"></script>
+
+<div id="element-to-print">
 <center>
 <div class="heading" style="font-family: 'Bungee Shade';font-size: 22px;background-color: #ffbb99;height: 70px;padding: 5px 0 5px 0;text-align: center;">
 	<h2>Online Class Schedule</h2>
@@ -20,8 +23,7 @@
 </div>
 
 <div class="slotter" id="slotter" style="">
-<h4>Enter Course Number and Link</h4><br>
-<h4>(ex. Name: OK1100, Link: meet.joojle.something)</h4>
+<h4>Enter Course Number and Link</h4>
 <div><input id="namea" placeholder="Name A Slot"><input id="a" placeholder="Class Link"><button onClick="changer(a)">Insert</button></div>
 <div><input id="nameb" placeholder="Name B Slot"><input id="b" placeholder="Class Link"><button onClick="changer(b)">Insert</button></div>
 <div><input id="namec" placeholder="Name C Slot"><input id="c" placeholder="Class Link"><button onClick="changer(c)">Insert</button></div>
@@ -43,7 +45,7 @@
 </center>
 
 
-	<center>
+
 	<!-- TABLE -->
 	<div class="tablee" style="overflow-x:auto;">
 		<table>
@@ -126,7 +128,6 @@
 			</tr>
 			<!-- SAT -->
 		</table>
-		</center>
 		<center><button id="convert-button" style="background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -141,6 +142,6 @@
 			Convert to Timetable
 		</button></center>
 	</div>
-
+</div>
 </body>
 </html>
