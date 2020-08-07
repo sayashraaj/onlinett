@@ -35,7 +35,9 @@ for(index=0;index<boxes.length;index++){
 // }
 // }
 
-window.print();
+// window.print();
+var element = document.getElementById('element-to-print');
+html2pdf(element);
 
 }
 
