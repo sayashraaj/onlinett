@@ -4,6 +4,7 @@ function convert(){
 document.getElementById('slotter').style.display='none';
 document.getElementsByClassName('howtouse')[0].style.display='none';
 document.getElementById('convert-button').style.display='none';
+document.getElementById('indi-instr').style.display='none';
 
 
 var index, boxes,id,name,link;
